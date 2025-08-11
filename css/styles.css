@@ -1,0 +1,1882 @@
+/* Desktop Mode */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+
+  header {
+    padding: 60px 80px 60px 80px;
+    gap: 20px;
+  }
+
+  .head-nav .trigram {
+    display: none;
+  }
+
+.head-container {
+  display: flex;
+  width: auto;
+  height: 86px;
+  padding: 10px 10px 30px 10px;
+  align-items: center;
+}
+
+
+.logo {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  align-items: center;
+}
+
+.logo img {
+  display: flex;
+  width: 150px;
+  height: 50px;
+}
+
+.head-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;;
+  width: 90px;
+  height: 40px;
+  background-color: rgb(71, 120, 234);
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: white;
+  border: 1px solid rgb(71,120,234);
+  color: rgb(71, 120, 234);
+  transition-delay: 0.5s;
+}
+
+.head-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+  width: 100%;
+  padding: 6px 15px;
+  align-items: center;
+}
+
+.head-nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+li::marker {
+  content: none;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 325px;
+  top: 80px;
+  background-image: url('./assets/bg/background-top.svg');
+}
+
+
+.left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px 20px 0;
+  gap: 10px;
+  width: 50%;
+  color: black;
+}
+
+.left-part > h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 45px;
+  width: 334px;
+}
+
+.left-part > span {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+}
+
+.right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 20px 0;
+  gap: 10px;
+  width: 50%;
+}
+
+.brand-logo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+
+.brand-logo img {
+  width: 38px;
+  height: 38px;
+}
+
+
+.brand-logo img[alt="Asana"] {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 30px;
+  left: 490px;
+  animation: top-bottom 1s ease-in-out;
+}
+
+.brand-logo img[alt="Atlassian"] {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 20px;
+  left: 120px;
+  animation: move-right 1s ease-in-out;
+}
+
+.brand-logo img[alt="Calendar"] {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 240px;
+  left: 275px;
+  animation: move-right 1s ease-in-out;
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+.brand-logo img[alt="Google Ads"] {
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 220px;
+  right: 65px;
+  animation: top-bottom 1s ease-in-out;
+}
+
+.brand-logo img[alt="Google"] {
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 20px;
+  right: 350px;
+  animation: top-bottom 1s ease-in-out;
+}
+
+.brand-logo img[alt="Paypal"] {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 150px;
+  left: -450px;
+  animation: move-right 1s ease-in-out;
+}
+
+.brand-logo img[alt="Weave"] {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 120px;
+  right: 250px;
+  animation: top-bottom 1s ease-in-out;
+}
+
+@keyframes top-bottom {
+  from {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+.whyfront-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 520px;
+  padding: 80px;
+  margin: 10px;
+  gap: 20px;
+}
+
+.why-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.why-front p {
+  display: flex;
+  width: 500px;
+  height: 80px;
+}
+
+.bullet-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 80px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.circle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.top-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) 
+    #ebdee1;
+}
+
+.bullet-txt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.bullet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 690px;
+  padding: 80px;
+}
+
+.pricing-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding: 0 0 40px;
+}
+
+.plans-features-list {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.pricing-table {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  gap: 30px;
+}
+
+.Plan {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 400px;
+  gap: 40px;
+  padding: 45px 30px 150px 30px;
+  box-shadow: 0 2px 6px rgb(40, 39, 39);
+}
+
+.Plan:hover {
+  transform: scale(1.025);
+}
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 200px;
+  gap: 20px;
+}
+
+.plan-price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.plan-price p {
+  display: flex;
+  font-size: 50px;
+}
+
+.plan-period {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.plan-period p {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+}
+
+.planDivider {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.plan-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+button {
+  display: flex;
+  width: 120px;
+  font-size: 10px;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 12px;
+}
+
+.planfeatures {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 450px;
+  padding: 10px;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  height: 50%;
+}
+
+.plan-option-1 {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.row-two {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+
+.plan-option-2 {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.hire-us-container {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  padding: 40px 20px 40px 20px;
+  background-color: rgb(47, 47, 118);
+}
+
+.left-part-hire {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0;
+  padding: 0 0 0 70px;
+  color: white;
+  border-radius: 20px;
+}
+
+.top-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 20px;
+}
+
+.hire-us-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hire-us-title > span {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.phrase > span {
+  display: flex;
+  justify-content: flex-start;
+  font-style: italic;
+}
+
+.bottom-part {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  gap: 15px;
+  padding: 20px;
+}
+
+.person  {
+  display: flex;
+  flex-direction: column;
+  height: 10px;
+  gap: 5px;
+}
+
+.person > span {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.person-img > img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.hire-divider {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.right-part-hire {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.form-data h3 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 5px;
+  font-size: medium;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+  gap: 23px;
+  height: 30px;
+  border-radius: 5%;
+}
+
+.form-group input {
+  display: flex;
+  width: 100%;
+}
+
+
+.form-group-email  input {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.form-group-drop {
+  display: flex;
+  width: 100%;
+  gap: 23px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.form-group-drop input {
+  display: flex;
+  width: 100%;
+}
+
+
+.textarea {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 80px;
+}
+
+.form-group-policies {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: small;
+  gap: 10px;
+}
+
+.Frame20 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+.ajax:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+}
+
+.Frame {
+  display: flex;
+  width: 100%;
+  padding: 25px;
+}
+
+.Front-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 310px;
+  height: 110px;
+  font-size: small;
+}
+
+.Front-info-logo {
+  display: flex;
+  width: 90px;
+  height: 35px;
+}
+
+.Front-Address:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.company-resources {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.Frame16-footer {
+  display: flex;
+  gap: 80px;
+}
+
+.Frame16 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Frame17-footer {
+  display: flex;
+  gap: 80px;
+}
+
+.Frame17 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menuItem {
+  display: flex;
+  font-size: small;
+}
+
+.menuItem:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+}
+
+
+/* Tablet styling */
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .head-nav {
+    display: none;
+  }
+
+  .head-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 664px;
+  }
+
+  .left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .btn {
+  display: flex;
+  justify-content: center;;
+  width: 90px;
+  height: 40px;
+  background-color: rgb(71, 120, 234);
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  align-items: center;
+  }
+
+  .right-part {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+  }
+
+  .brand-logo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .brand-logo img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
+
+.brand-logo img[alt="Asana"] {
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 10px;
+  left: 520px;
+}
+
+.brand-logo img[alt="Atlassian"]{
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 20px;
+  left: 200px;
+}
+
+.brand-logo img[alt="Calendar"]{
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 220px;
+  left: 335px;
+}
+
+.brand-logo img[alt="Google Ads"]{
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 200px;
+  right: 10px;
+}
+
+.brand-logo img[alt="Google"]{
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 10px;
+  right: 320px;
+}
+
+.brand-logo img[alt="Paypal"]{
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 160px;
+  left: -380px;
+}
+
+.brand-logo img[alt="Weave"] {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 120px;
+  right: 140px;
+}
+
+.whyfront-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-front p {
+  display: flex;
+  width: 600px;
+  justify-content: center;
+}
+
+.bullet-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
+.bullet-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bullet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  gap: 10px;
+}
+
+.top-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) 
+    #ebdee1;
+}
+
+li::marker {
+  content: none;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans-features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 20px;
+  gap: 50px;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.planDivider {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.plan-price {
+  display: flex;
+  font-size: 50px;
+  align-items: flex-end;
+}
+
+.plan-period {
+  display: flex;
+  font-size: large;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions > .btn {
+  display: flex;
+  width: 164px;
+  height: 50px;
+}
+
+.planfeatures {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-one {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.plan-option-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+.row-two {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.plan-option-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+.icon-img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+
+.hire-us-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(47, 47, 118)
+}
+
+.left-part-hire {
+  display: flex;
+  padding: 40px 30px 20px 30px;
+  gap: 20px;
+  color: white;
+}
+
+.top-part {
+  display: flex;
+  flex-direction: column;
+  width: 396px;
+  gap: 20px;
+  padding: 30px 30px 10px;
+}
+
+.hire-divider {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.bottom-part {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person-img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.right-part-hire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color : white;
+  border-radius: 10px;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  height: 482px;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  height: 40px;
+}
+
+.form-group-email {
+  display: flex;
+  width: 100%;
+}
+
+.form-group-email input {
+  width: 100%;
+  height: 40px;
+}
+
+.form-group-drop {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group-drop input {
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+
+.textarea {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  height: 250px;
+}
+
+.form-group-policies {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+.Frame20 {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-left: 50px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-actions .btn {
+  width: 120px;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+}
+
+.Frame {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+}
+
+.Front-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.Front-info-logo img[alt="Front-logo"] {
+  width: 150px;
+  height: 100px;
+}
+
+.Front-Address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.address {
+  display: flex;
+}
+
+.company-resources {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+
+.Frame16-footer {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.Frame16 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 10px;
+}
+
+.Frame17-footer {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.Frame17 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 10px;
+}
+
+}
+
+/* Mobile adaptation starts here */
+
+@media(max-width:767px) {
+
+  .head-nav .trigram {
+    display: flex;
+  }
+
+  .head-container {
+    display: flex;
+    padding: 20px;
+  }
+
+  .logo {
+    display: flex;
+    width: 300px;
+    height: 80px;
+  }
+
+  .head-nav {
+    display: none;
+  }
+
+  .btn {
+    display: flex;
+  justify-content: center;;
+  width: 90px;
+  height: 40px;
+  background-color: rgb(71, 120, 234);
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  align-items: center;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 0 30px 0;
+  }
+
+  .actions {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .right-part {
+    display: flex;
+    width: 100%;
+  }
+
+  .brand-logo {
+    display: flex;
+    width: 100%;
+    height: 309px;
+  }
+
+  .brand-logo img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+  }
+
+.brand-logo img[alt="Asana"] {
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 10px;
+  left: 520px;
+}
+
+.brand-logo img[alt="Atlassian"]{
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 20px;
+  left: 200px;
+}
+
+.brand-logo img[alt="Calendar"]{
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 220px;
+  left: 335px;
+}
+
+.brand-logo img[alt="Google Ads"]{
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 200px;
+  right: 10px;
+}
+
+.brand-logo img[alt="Google"]{
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 10px;
+  right: 320px;
+}
+
+.brand-logo img[alt="Paypal"]{
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color:  rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 160px;
+  left: -380px;
+}
+
+.brand-logo img[alt="Weave"] {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  padding: 10px;
+  top: 120px;
+  right: 140px;
+}
+
+  .whyfront-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 488px;
+    padding: 0 0 60px 0;
+    gap: 40px;
+  }
+
+  .why-front {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 137px;
+    padding: 0 16px 0 16px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bullet-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bullet-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .bullet {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .bullet li::marker {
+    content: none;
+  }
+
+  .top-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) 
+    #ebdee1;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.pricing-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans-features-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 397px;
+  gap: 50px;
+  padding: 40px;
+  border: 1px solid rgb(120, 116, 116);
+}
+
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.plan-price {
+  display: flex;
+  font-size: 50px;
+  gap: 7px;
+}
+
+.plan-period {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+}
+
+.planDivider {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  gap: 10px;
+}
+
+.plan-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.planfeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-option-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+  gap: 20px;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan-option-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+  gap: 20px;
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.hire-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(47, 47, 118);
+  color: white;
+}
+
+.left-part-hire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px 20px 16px;
+  gap: 60px;
+  height: 457px;
+}
+
+.top-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.hire-us-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hire-us-title span {
+  display: flex;
+  color: rgb(144, 134, 134);
+}
+
+.hire-divider {
+  display: flex;
+  border: 1px solid white;
+  width: 100%;
+}
+
+.bottom-part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 30px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.person-img img[alt="Man"] {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.right-part-hire {
+  display: flex;
+  padding: 30px 16px 30px 16px;
+  gap: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  gap: 37px;
+  border-radius: 10px;
+  color: black;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.form-group-email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.form-group-drop {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.textarea {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  height: 150px;
+}
+
+.form-group-policies {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.Frame20 {
+  display: flex;
+  gap: 10px;
+}
+
+.Footer {
+  display: flex;
+  padding: 80px 16px 40px 16px;
+  gap: 40px;
+}
+
+.Frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.Front-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Front-info-logo {
+  display: flex;
+  width: 150px;
+  align-items: center;
+}
+
+.Front-Address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.phone-number {
+  display: flex;
+  justify-content: center;
+}
+
+.company-resources {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.Frame16-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Frame16 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.Frame17-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Frame17 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
