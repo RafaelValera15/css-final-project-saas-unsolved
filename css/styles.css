@@ -94,7 +94,7 @@ li::marker {
   width: 100%;
   height: 325px;
   top: 80px;
-  background-image: url('./assets/bg/background-top.svg');
+  background-image: url('/assets/bg/background-top.svg');
 }
 
 
@@ -137,14 +137,14 @@ li::marker {
   width: 50%;
 }
 
-.brand-logo {
+.brand-logo1 {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
 
-.brand-logo img {
+.brand-logo1 img {
   width: 38px;
   height: 38px;
 }
@@ -156,12 +156,12 @@ li::marker {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color:  rgb(241, 241, 241);
-  box-shadow: 0 1px 3px rgb(113, 110, 110);
+  /* box-shadow: 0 1px 3px rgb(113, 110, 110); */
   padding: 10px;
   top: 30px;
   left: 490px;
   animation: top-bottom 1s ease-in-out;
+  background-color: white;
 }
 
 .brand-logo img[alt="Atlassian"] {
@@ -319,11 +319,9 @@ li::marker {
   justify-content: center;
   width: 40px;
   height: 40px;
-  aspect-ratio: 1;
   border-radius: 50%;
-  background: 
-    radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) 
-    #ebdee1;
+  background: rgb(134, 142, 206);
+
 }
 
 .bullet-txt {
@@ -783,6 +781,15 @@ span {
   .head-nav {
     display: none;
   }
+  
+  .top-nav .trigram {
+    text-decoration: none;
+    color: black;
+  }
+
+  .fa {
+    display: inline-block;
+  }
 
   .head-container {
     display: flex;
@@ -801,6 +808,7 @@ span {
     justify-content: center;
     width: 100%;
     height: 664px;
+    background-image: url('/assets/bg/background-top.svg');
   }
 
   .left-part {
@@ -838,14 +846,14 @@ span {
     width: 100%;
   }
 
-  .brand-logo {
+  .brand-logo1 {
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
   }
 
-  .brand-logo img {
+  .brand-logo1 img {
     display: flex;
     width: 80px;
     height: 80px;
@@ -992,9 +1000,7 @@ span {
   height: 40px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: 
-    radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) 
-    #ebdee1;
+  background: rgb(134, 142, 206);
 }
 
 li::marker {
@@ -1023,8 +1029,8 @@ li::marker {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 20px 20px;
+  width: 90%;
+  margin: auto;
   gap: 50px;
   padding: 30px;
   border: 1px solid black;
@@ -1344,7 +1350,7 @@ input[type="checkbox"] {
   }
 
   .btn {
-    display: flex;
+  display: flex;
   justify-content: center;;
   width: 90px;
   height: 40px;
@@ -1359,6 +1365,7 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('/assets/bg/background-top.svg');
   }
 
   .left-part {
@@ -1377,16 +1384,16 @@ input[type="checkbox"] {
 
   .right-part {
     display: flex;
-    width: 100%;
+    width: 80%;
   }
 
-  .brand-logo {
+  .brand-logo1 {
     display: flex;
-    width: 100%;
+    width: 400px;
     height: 309px;
   }
 
-  .brand-logo img {
+  .brand-logo1 img {
     display: flex;
     width: 50px;
     height: 50px;
@@ -1402,7 +1409,7 @@ input[type="checkbox"] {
   box-shadow: 0 1px 3px rgb(113, 110, 110);
   padding: 10px;
   top: 10px;
-  left: 520px;
+  left: 420px;
 }
 
 .brand-logo img[alt="Atlassian"]{
@@ -1415,7 +1422,7 @@ input[type="checkbox"] {
   box-shadow: 0 1px 3px rgb(113, 110, 110);
   padding: 10px;
   top: 20px;
-  left: 200px;
+  left: 100px;
 }
 
 .brand-logo img[alt="Calendar"]{
@@ -1428,7 +1435,7 @@ input[type="checkbox"] {
   box-shadow: 0 1px 3px rgb(113, 110, 110);
   padding: 10px;
   top: 220px;
-  left: 335px;
+  left: 235px;
 }
 
 .brand-logo img[alt="Google Ads"]{
@@ -1441,7 +1448,7 @@ input[type="checkbox"] {
   box-shadow: 0 1px 3px rgb(113, 110, 110);
   padding: 10px;
   top: 200px;
-  right: 10px;
+  right: 40px;
 }
 
 .brand-logo img[alt="Google"]{
@@ -1454,7 +1461,7 @@ input[type="checkbox"] {
   box-shadow: 0 1px 3px rgb(113, 110, 110);
   padding: 10px;
   top: 10px;
-  right: 320px;
+  right: 240px;
 }
 
 .brand-logo img[alt="Paypal"]{
@@ -1467,7 +1474,7 @@ input[type="checkbox"] {
   box-shadow: 0 1px 3px rgb(113, 110, 110);
   padding: 10px;
   top: 160px;
-  left: -380px;
+  left: -340px;
 }
 
 .brand-logo img[alt="Weave"] {
@@ -1505,7 +1512,9 @@ input[type="checkbox"] {
   .bullet-list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 40px;
   }
 
   .bullet-list ul {
@@ -1518,6 +1527,7 @@ input[type="checkbox"] {
     display: flex;
     gap: 30px;
     align-items: center;
+    width: 30%;
   }
 
   .bullet li::marker {
@@ -1532,9 +1542,7 @@ input[type="checkbox"] {
   height: 40px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: 
-    radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) 
-    #ebdee1;
+  background: rgb(134, 142, 206);
 }
 
 .pricing-container {
